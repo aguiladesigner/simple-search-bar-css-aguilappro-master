@@ -1,0 +1,71 @@
+/* Variables */
+
+:root {
+    --pink: #e83e8c;
+    --primary: #007bff;
+    --indigo: #6610f2;
+    --white: #fff;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--pink);
+    font-family: sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap {
+    width: 50%;
+    height: 50vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchInput {
+    width: 100%;
+    height: 1.1em;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid var(--primary);
+    border-right: none;
+    color: var(--indigo);
+    outline: none;
+    padding: 1em;
+}
+
+.searchInput:focus {
+    color: var(--primary);
+}
+
+.searchButton {
+    width: 2em;
+    height: 1.9em;
+    border: 2px solid var(--primary);
+    border-radius: 0px 5px 5px 0px;
+    background-color: var(--primary);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1em;
+    text-align: center;
+}
+
+.searchButton:hover {
+    background-color: var(--indigo);
+}
